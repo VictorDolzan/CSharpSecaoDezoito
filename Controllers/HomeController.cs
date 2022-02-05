@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewData["Message"] = "Sales Web MVC App from C# Course";
+        ViewData["Developer"] = "Victor Dolsan";
         return View();
     }
 
