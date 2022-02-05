@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CSharpSecaoDezoito.Models;
+using CSharpSecaoDezoito.Models.ViewModels;
 
 namespace CSharpSecaoDezoito.Controllers;
 
