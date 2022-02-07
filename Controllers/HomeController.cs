@@ -20,6 +20,8 @@ namespace CSharpSecaoDezoito.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Developer"] = "Victor Dolsan";
+            ViewData["GitHub"] = "VictorDolzan";
             return View();
         }
 
