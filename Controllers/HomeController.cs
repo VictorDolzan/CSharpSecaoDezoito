@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CSharpSecaoDezoito.Models;
+using CSharpSecaoDezoito.Models.ViewModels;
 
 namespace CSharpSecaoDezoito.Controllers
 {
@@ -17,7 +18,6 @@ namespace CSharpSecaoDezoito.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             ViewData["Developer"] = "Victor Dolsan";

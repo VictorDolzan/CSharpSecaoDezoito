@@ -1,6 +1,6 @@
 using System;
 
-namespace CSharpSecaoDezoito.Models
+namespace CSharpSecaoDezoito.Models.ViewModels
 {
     public class ErrorViewModel
     {
