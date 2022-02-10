@@ -1,0 +1,24 @@
+@model CSharpSecaoDezoito.Models.Department
+
+@{
+    ViewData["Title"] = "Departments Details";
+}
+
+<h2><img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>Details</h2>
+
+<div>
+    <h4>Department</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
