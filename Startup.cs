@@ -29,7 +29,8 @@ namespace CSharpSecaoDezoito
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             services.AddDbContext<CSharpSecaoDezoitoContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("CSharpSecaoDezoitoContext")));
+                    options.UseMySql(Configuration.GetConnectionString("CSharpSecaoDezoitoContext"), builder =>
+                    builder.MigrationsAssembly("CSharpSecaoDezoito")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

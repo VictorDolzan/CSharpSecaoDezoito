@@ -46,3 +46,7 @@
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/bin/Debug/netcoreapp3.1/Pomelo.EntityFrameworkCore.MySql.Design.dll
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/bin/Debug/netcoreapp3.1/Pomelo.JsonObject.dll
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Index.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Create.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Delete.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Details.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Edit.cshtml.g.cs

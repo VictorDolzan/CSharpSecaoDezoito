@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CSharpSecaoDezoito.Models
 {
-    class CSharpSecaoDezoitoContext : DbContext
+    public class CSharpSecaoDezoitoContext : DbContext
     {
         public CSharpSecaoDezoitoContext (DbContextOptions<CSharpSecaoDezoitoContext> options)
             : base(options)

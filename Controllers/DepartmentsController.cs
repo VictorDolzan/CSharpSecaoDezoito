@@ -12,7 +12,7 @@ using CSharpSecaoDezoito.Models.ViewModels;
 
 namespace CSharpSecaoDezoito.Controllers
 {
-    class DepartmentsController : Controller
+    public class DepartmentsController : Controller
     {
         private readonly CSharpSecaoDezoitoContext _context;
 
@@ -20,6 +20,7 @@ namespace CSharpSecaoDezoito.Controllers
         {
             _context = context;
         }
+        // GET: Departments
         public async Task<IActionResult> Index()
         {
             // List<Department> list = new List<Department>();
@@ -28,6 +29,7 @@ namespace CSharpSecaoDezoito.Controllers
             // list.Add(new Department { Id = 3, Name = "Computers"});
 
             return View(await _context.Department.ToListAsync());
+            //return View(list);
         }
          // GET: Departments/Details/5
         public async Task<IActionResult> Details(int? id)
