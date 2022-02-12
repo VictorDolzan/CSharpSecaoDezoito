@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using CSharpSecaoDezoito.Models;
 using CSharpSecaoDezoito.Data;
+using CSharpSecaoDezoito.Services;
 
 namespace CSharpSecaoDezoito
 {
@@ -34,6 +35,7 @@ namespace CSharpSecaoDezoito
                     builder.MigrationsAssembly("CSharpSecaoDezoito")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         
         }
 
