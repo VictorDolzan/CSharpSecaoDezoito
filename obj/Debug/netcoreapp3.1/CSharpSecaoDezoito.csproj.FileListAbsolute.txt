@@ -50,3 +50,4 @@
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Delete.cshtml.g.cs
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Details.cshtml.g.cs
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Departments/Edit.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Sellers/Index.cshtml.g.cs
