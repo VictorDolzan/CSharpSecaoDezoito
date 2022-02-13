@@ -23,6 +23,7 @@ namespace CSharpSecaoDezoito.Services
 
         public void Insert(Seller obj)
         {
+            obj.DepartmentS = _context.Department.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
