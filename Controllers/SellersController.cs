@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using CSharpSecaoDezoito.Models;
 using CSharpSecaoDezoito.Models.ViewModels;
 using CSharpSecaoDezoito.Services;
+using CSharpSecaoDezoito.Services.Exceptions;
 
 namespace CSharpSecaoDezoito.Controllers
 {
@@ -98,6 +99,29 @@ namespace CSharpSecaoDezoito.Controllers
             List<Department> departments = _departmentService.FindAll();
             SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = departments };
             return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, Seller seller)
+        {         
+            if(id != seller.Id)
+            {
+                return NotFound();
+            }
+            try
+            {
+            _sellerService.Update(seller);
+            return RedirectToAction(nameof(Index));
+            }
+            catch(NotFoundException)
+            {
+                return NotFound();
+            }
+            catch(DbConcurrencyException)
+            {
+                return BadRequest();
+            }
         }
     }
 }
