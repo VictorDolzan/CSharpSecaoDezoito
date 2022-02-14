@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CSharpSecaoDezoito.Data;
 using CSharpSecaoDezoito.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CSharpSecaoDezoito.Services
 {
@@ -29,7 +30,7 @@ namespace CSharpSecaoDezoito.Services
 
          public Seller FindById(int id)
         {
-            return _context.Seller.FirstOrDefault(obj => obj.Id == id);
+            return _context.Seller.Include(obj => obj.DepartmentS).FirstOrDefault(obj => obj.Id == id);
         }
 
         public void Remove(int id)

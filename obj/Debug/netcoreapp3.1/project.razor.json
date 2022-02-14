@@ -14452,6 +14452,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/Views/Sellers/Details.cshtml",
+      "TargetPath": "Views\\Sellers\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/Views/Departments/Delete.cshtml",
       "TargetPath": "Views\\Departments\\Delete.cshtml",
       "FileKind": "mvc"

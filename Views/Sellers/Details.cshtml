@@ -1,0 +1,49 @@
+@model CSharpSecaoDezoito.Models.Seller
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2><img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>@ViewData["Title"]</h2>
+
+<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-title">Seller</h4>
+    <hr />
+    <dl class="d1-horizontal">
+        <dt class="btn btn-success disabled" style="margin-bottom: 10px">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.Name)" readonly=""> 
+        </dd>
+        <dt class="btn btn-warning disabled" style="margin-bottom: 10px">
+           @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.Email)" readonly=""> 
+        </dd>
+        <dt class="btn btn-primary disabled" style="margin-bottom: 10px">
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd>
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.BirthDate)" readonly="">
+        </dd>
+        <dt class="btn btn-danger disabled" style="margin-bottom: 10px">
+            @Html.DisplayNameFor(model => model.BaseSalary)
+        </dt>
+        <dd>
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.BaseSalary)" readonly="">
+        </dd>
+        <dt class="btn btn-secondary disabled" style="margin-bottom: 10px">
+            @Html.DisplayNameFor(model => model.DepartmentS)
+        </dt>
+        <dd>
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.DepartmentS.Name)" readonly="">
+        </dd>
+    </dl>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+        <a asp-action="Index" class="btn btn-success" style="margin-left:10px">Back to List</a>
+    </div>
+</div>
