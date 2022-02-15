@@ -6,19 +6,19 @@
 
 <h2><img src="https://img.icons8.com/color/48/000000/c-sharp-logo-2.png"/>Details</h2>
 
-<div>
-    <h4>Department</h4>
+<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <h4><img src="https://img.icons8.com/dusk/64/000000/media-queries.png"/>Department</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt class="btn btn-info disabled">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
+        <dd style="max-width: 200px">
+           <input class="form-control" id="readOnlyInput" type="text" placeholder="@Html.DisplayFor(model => model.Name)" readonly="">
         </dd>
     </dl>
-</div>
-<div>
-    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a class="btn btn-success" asp-action="Index">Back to List</a>
+    <div>
+        <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a class="btn btn-success" asp-action="Index">Back to List</a>
+    </div>
 </div>
