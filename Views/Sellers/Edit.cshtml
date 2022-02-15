@@ -20,18 +20,22 @@
                     <div class="form-group">
                         <label class="btn btn-info disabled" asp-for="Seller.Name" class="control-label"></label>
                         <input asp-for="Seller.Name" class="form-control" />
+                        <span asp-validation-for="Seller.Name" class="text-warning"></span>
                     </div>
                      <div class="form-group">
                         <label class="btn btn-warning disabled" asp-for="Seller.Email" class="control-label"></label>
                         <input asp-for="Seller.Email" class="form-control" />
+                        <span asp-validation-for="Seller.Email" class="text-warning"></span>
                     </div>
                      <div class="form-group">
                         <label class="btn btn-secondary disabled" asp-for="Seller.BirthDate" class="control-label"></label>
                         <input asp-for="Seller.BirthDate" class="form-control" />
+                        <span asp-validation-for="Seller.BirthDate" class="text-warning"></span>
                     </div>
                      <div class="form-group">
                         <label class="btn btn-danger disabled" asp-for="Seller.BaseSalary" class="control-label"></label>
                         <input asp-for="Seller.BaseSalary" class="form-control" />
+                        <span asp-validation-for="Seller.BaseSalary" class="text-warning"></span>
                     </div>
                     <div class="form-group">
                         <label class="btn btn-primary disabled" asp-for="Seller.DepartmentId" class="control-label"></label>
@@ -48,3 +52,7 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
