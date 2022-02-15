@@ -19,7 +19,7 @@ namespace CSharpSecaoDezoito.Models
         public string Name { get; set; }
 
         
-        [EmailAddress(ErrorMessage ="Enter a valid email")]
+        //[EmailAddress(ErrorMessage ="Enter a valid email")]
         [Required(ErrorMessage ="{0} required")]
         public string Email { get; set; }
 
