@@ -55,3 +55,6 @@
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Sellers/Delete.cshtml.g.cs
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Sellers/Details.cshtml.g.cs
 /home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/Sellers/Edit.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/SalesRecords/Index.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/SalesRecords/GroupingSearch.cshtml.g.cs
+/home/victor/Documents/Udemy/C# Completo Programação Orientada a objetos + Projetos/CSharpSecaoDezoito/obj/Debug/netcoreapp3.1/Razor/Views/SalesRecords/SimpleSearch.cshtml.g.cs
