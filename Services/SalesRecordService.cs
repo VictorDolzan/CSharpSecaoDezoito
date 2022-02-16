@@ -17,5 +17,23 @@ namespace CSharpSecaoDezoito.Services
         {
             _context = context;
         }
+
+        public async Task<List<SalesRecord>> FindByDateAsync(DateTime? minDate, DateTime? maxDate)
+        {
+            var result = from obj in _context.SalesRecord select obj;
+            if(minDate.HasValue)
+            {
+                result = result.Where(x => x.Date>= minDate.Value);
+            }
+            if(maxDate.HasValue)
+            {
+                result = result.Where(x => x.Date <= maxDate.Value);
+            }
+            return await result
+            .Include(x => x.SellerSR)
+            .Include(x => x.SellerSR.DepartmentS)
+            .OrderByDescending(x => x.Date)
+            .ToListAsync();
+        }
     }
 }
