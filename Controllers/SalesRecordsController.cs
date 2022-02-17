@@ -50,8 +50,8 @@ namespace CSharpSecaoDezoito.Controllers
             {
                 maxDate = DateTime.Now;
             }
-            ViewData["minDate"] = minDate.Value.ToString("yyyy-MM-dd");
-            ViewData["maxDate"] = maxDate.Value.ToString("yyyy-MM-dd");
+            ViewData["minDate"] = minDate.Value.ToString("MM-dd-yyyy");
+            ViewData["maxDate"] = maxDate.Value.ToString("MM-dd-yyyy");
             var result = await _salesRecordService.FindByDateGroupingAsync(minDate, maxDate);
             return View(result);
         }
